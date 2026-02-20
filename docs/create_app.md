@@ -327,6 +327,16 @@ You can:
 5. [*Manage software packs*](#manage-software-packs).
 6. Open *related documentation*.
 
+#### Install software packs
+
+Browse the [public index](https://www.keil.arm.com/packs/) to search for software packs. This website also provides
+hints on how to add a software pack to a CMSIS Solution or via
+[`cpackget`](https://open-cmsis-pack.github.io/cmsis-toolbox/build-tools/#cpackget-invocation) to your local
+installation.
+
+!!! Tip
+    Copy the `cpackget` command into the VS Code **Terminal** window to install a pack locally.
+
 #### Manage software packs
 
 Click on either icon: ![Manage software packs](./images/manage-packs.png) to open the **Manage Pack** dialog:

@@ -15,32 +15,22 @@ Continue to [load and run](#load-and-run) the solution.
 After you initiate the build process, a Terminal opens and displays the build operation:
 
 ```txt
-Execute: cbuild /Users/user/03_work/02_Projects/ST/Nucleo-F756ZG/Blinky/Blinky.csolution.yml --active NUCLEO-F756ZG --packs
-+---------------------------------------------------
-(1/1) Building context: "Blinky.Debug+NUCLEO-F756ZG"
-Using AC6 V6.24.0 compiler, from: '/Users/user/.vcpkg/artifacts/2139c4c6/compilers.arm.armclang/6.24.0/bin/'
-Building CMake target 'Blinky.Debug+NUCLEO-F756ZG'
-[1/51] Building C object CMakeFiles/Group_Source_Files_retarget_stdio_c.dir/Users/user/03_work/02_Projects/ST/Nucleo-F756ZG/Blinky/retarget_stdio.o
-[2/51] Building ASM object CMakeFiles/Group_CubeMX.dir/Users/user/03_work/02_Projects/ST/Nucleo-F756ZG/Blinky/STM32CubeMX/NUCLEO-F756ZG/STM32CubeMX/MDK-ARM/startup_stm32f756xx.o
-Warning: A1950W: The legacy armasm assembler is deprecated. Consider using the armclang integrated assembler instead.
-0 Errors, 1 Warning
-[3/51] Building C object CMakeFiles/Group_CubeMX.dir/Users/user/03_work/02_Projects/ST/Nucleo-F756ZG/Blinky/STM32CubeMX/NUCLEO-F756ZG/STM32CubeMX/Src/stm32f7xx_hal_timebase_tim.o
-...
-[49/51] Building C object CMakeFiles/Keil_CMSIS_Driver_USART_3_0_0.dir/Users/user/.cache/arm/packs/ARM/CMSIS-Driver_STM32/1.1.0/Drivers/USART_STM32.o
-[50/51] Building C object CMakeFiles/ARM_CMSIS_RTOS2_Keil_RTX5_Source_5_9_0.dir/Users/user/.cache/arm/packs/ARM/CMSIS-RTX/5.9.0/Source/rtx_thread.o
-[51/51] Linking C executable /Users/user/03_work/02_Projects/ST/Nucleo-F756ZG/Blinky/out/Blinky/NUCLEO-F756ZG/Debug/Blinky.axf
-Program Size: Code=31972 RO-data=1076 RW-data=512 ZI-data=38760  
-+------------------------------------------------------------
-Build summary: 1 succeeded, 0 failed - Time Elapsed: 00:00:04
-+============================================================
-Completed: cbuild succeed with exit code 0
-Build complete
+🔄 Execute: cbuild /Users/user/Git/Org/Blinky_PL10-CNANO/Blinky.csolution.yml --target all --active PIC32CM6408PL10048 --packs --skip-convert
+Building CMake target 'Blinky.Debug+PIC32CM6408PL10048'
+[20/20] Linking C executable /Users/user/Git/Org/Blinky_PL10-CNANO/out/Blinky/PIC32CM6408PL10048/Debug/Blinky.axf
+Program Size: Code=24128 RO-data=1304 RW-data=196 ZI-data=4652  
+[1/1] cd /Users/user/Git/Org/Blinky_PL10-CNANO/tmp/1 &...Git/Org/Blinky_PL10-CNANO/out/Blinky/PIC32CM6408PL10048/Debug
+✅ Completed: cbuild succeed with exit code 0
 ```
 
 The output directory usually contains an ELF (`.axf`) and a HEX (`.hex`) file.
 
 To learn about the solution structure, refer to
 [CMSIS-Toolbox documentation](https://open-cmsis-pack.github.io/cmsis-toolbox/build-overview/)
+
+!!! Tip
+    You can (re-)run the build command also manually in a VS Code **Terminal** window. This enables you to add further
+    options (for example `--debug`) to it.
 
 ## Load and Run
 
