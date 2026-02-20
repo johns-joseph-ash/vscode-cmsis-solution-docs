@@ -17,6 +17,7 @@ After you initiate the build process, a Terminal opens and displays the build op
 ```txt
 🔄 Execute: cbuild /Users/user/Git/Org/Blinky_PL10-CNANO/Blinky.csolution.yml --target all --active PIC32CM6408PL10048 --packs --skip-convert
 Building CMake target 'Blinky.Debug+PIC32CM6408PL10048'
+Using compiler: AC6 V6.24.0
 [20/20] Linking C executable /Users/user/Git/Org/Blinky_PL10-CNANO/out/Blinky/PIC32CM6408PL10048/Debug/Blinky.axf
 Program Size: Code=24128 RO-data=1304 RW-data=196 ZI-data=4652  
 [1/1] cd /Users/user/Git/Org/Blinky_PL10-CNANO/tmp/1 &...Git/Org/Blinky_PL10-CNANO/out/Blinky/PIC32CM6408PL10048/Debug
