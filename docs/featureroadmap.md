@@ -146,8 +146,8 @@
 
 | Category                                                              | Debug Features           |
 | --------------------------------------------------------------------- | ------------------------ |
-| &#128994; [Debug probes](./debug.md#debug-adapter-support)            | ULINK2/UILNKplus support |
-| &#128993; Debug probes                                                | UILNKpro support         |
+| &#128994; [Debug probes](./debug.md#debug-adapter-support)            | ULINK2/ULINKplus support |
+| &#128993; Debug probes                                                | ULINKpro support         |
 | &#128994; [Debug probes](./debug.md#debug-adapter-support)            | CMSIS-DAP support        |
 | &#128994; [Debug probes](./debug.md#debug-adapter-support)            | J-Link support           |
 | &#128994; Debug interfaces                                            | SWD                      |
