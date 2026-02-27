@@ -28,15 +28,6 @@ To get this working, use a browser that is not installed as a Snap package:
 
 - Install it on your machine.
 
-## Memory and Peripheral Inspector are missing
-
-If your **Debug** view does not contain
-["PERIPHERALS"](https://marketplace.visualstudio.com/items?itemName=eclipse-cdt.peripheral-inspector) and you cannot
-open the [Memory Inspector](https://marketplace.visualstudio.com/items?itemName=eclipse-cdt.memory-inspector), check if
-the extensions are installed correctly. If you had previously uninstalled the
-[Arm Debugger](https://marketplace.visualstudio.com/items?itemName=Arm.arm-debugger) extension, these two extensions
-might have been removed with it. Just reinstall them via the **Extensions** view.
-
 ## Create a library file
 
 With Keil Studio, it is possible to create a library file. All you need to do is to change the **output type** in the
@@ -103,7 +94,18 @@ If you rely on **LL** for your peripherals, select/add an unused peripheral:
 
 Now, the **GENERATE CODE** button creates/writes the `*.cgen.yml` file.
 
-## Change variable display radix
+## Debugging
+
+### Memory and Peripheral Inspector are missing
+
+If your **Debug** view does not contain
+["PERIPHERALS"](https://marketplace.visualstudio.com/items?itemName=eclipse-cdt.peripheral-inspector) and you cannot
+open the [Memory Inspector](https://marketplace.visualstudio.com/items?itemName=eclipse-cdt.memory-inspector), check if
+the extensions are installed correctly. If you had previously uninstalled the
+[Arm Debugger](https://marketplace.visualstudio.com/items?itemName=Arm.arm-debugger) extension, these two extensions
+might have been removed with it. Just reinstall them via the **Extensions** view.
+
+### Change variable display radix
 
 In the **Watch** and **Live Watch** views, you can change the radix of variables by using the
 `set output-radix base` command in the **Debug Console**. For example,
@@ -117,3 +119,29 @@ changes the radix to hexadecimal. Supported choices for base are decimal `8`, `1
 !!! NOTE
     - The `>` is part of the entered command instructing the console processing to use GDB CLI.
     - Refer to [Numbers](https://sourceware.org/gdb/current/onlinedocs/gdb.html/Numbers.html) for more information.
+
+### Cannot connect UART when debugging
+
+**Symptom**
+
+Using older **DAPLink** or **LPC-Link2** implementations, it is not possible to have a debug connection and monitor the
+output of the UART on the SERIAL MONITOR at the same time. Once the serial connection is opened, the debug connect
+stalls and throws these two errors:
+
+```txt
+Cannot execute this command while the target is running.
+Use the "interrupt" command to stop the target and then try again.
+```
+
+And
+
+```txt
+Unable to read memory.
+```
+
+**Solution**
+
+Using an NXP board with the new MCU-Link FW, this problem does not occur.
+
+For older boards, there is no new DAPLink firmware available. Please avoid using the UART when debugging or use an
+external debug adapter.
