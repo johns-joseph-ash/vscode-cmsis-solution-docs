@@ -239,7 +239,22 @@ You can add expressions to the **LIVE WATCH** by:
 1. Pressing the `+` sign and entering an expression.
 2. Using the context menu item **Add to Live Watch** in the editor or the the **Run and Debug** view.
 
-![Displaying a variable in the LIVE WATCH](https://github.com/Open-CMSIS-Pack/vscode-cmsis-debugger/raw/main//images/lw-counter.gif)
+![Displaying a variable in the LIVE WATCH](./images/cmsis-debugger/lw-counter.gif)
+
+#### COMPONENT VIEWER
+
+This view shows detailed information and helps to analyze the operation of software components. The required
+infrastructure can be easily added to user applications.
+
+Refer to the [Component Viewer documentation](https://arm-software.github.io/CMSIS-View/latest/cmp_viewer.html) for
+detailed advice on how to show information from user software using using an SCVD file.
+
+The Component Viewer shows information about:
+
+- Information from software components that is provided in memory for example by static variables or structures.
+- Objects that are addressed by an object handles or dynamic arrays.
+
+![Showing software component properties in the COMPONENT VIEWER](./images/cmsis-debugger/component-viewer.png)
 
 ### PERIPHERALS
 
