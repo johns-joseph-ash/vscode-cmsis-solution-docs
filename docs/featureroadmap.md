@@ -14,7 +14,7 @@
 | &#128994; [File groups](./userinterface.md#cmsis-view)                         | Logical grouping of source, header, and library files             |
 | &#128994; [Layer support](./create_app.md#configuration)                       | Easily retarget hardware connections                              |
 | &#128994; [Software components](./create_app.md#software-components-and-packs) | Manage software components on a project/layer level               |
-| &#128993; Manage packs                                                         | Manage CMSIS-Packs and versions graphically                       |
+| &#128994; [Manage packs](./create_app.md#manage-software-packs)                | Manage CMSIS-Packs and versions graphically                       |
 | &#128994; [Zephyr project support](./zephyr.md)                                | Build and debug Zephyr-based applications                         |
 | &#128994; [Configuration Wizard](./userinterface.md#configuration-wizard)      | GUI-assisted generation and modification of configuration code    |
 
@@ -106,7 +106,7 @@
 
 | Category                   | Debug Features          |
 | -------------------------- | ----------------------- |
-| &#128993; Component Viewer | Display and live update |
+| &#128994; [Component Viewer](./debug.md#component-viewer) | Display and live update |
 | &#128993; Event Recorder   | Show event information  |
 | &#128993; Event Recorder   | Save/log                |
 | &#128993; Event Recorder   | Event filtering         |
