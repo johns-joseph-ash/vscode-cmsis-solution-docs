@@ -243,7 +243,7 @@ You can add expressions to the **LIVE WATCH** by:
 
 #### COMPONENT VIEWER
 
-This view shows static information and helps to analyze the operation of software components. The required
+This view shows detailed information and helps to analyze the operation of software components. The required
 infrastructure can be easily added to user applications.
 
 Refer to the [Component Viewer documentation](https://arm-software.github.io/CMSIS-View/latest/cmp_viewer.html) for
